@@ -67,21 +67,24 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let country = prompt("What country are you from?");
-
-      if (
-        country === "Brazil" ||
-        country === "Portugal" ||
-        country === "brazil" ||
-        country === "BRAZIL" ||
-        country === "PORTUGAL" ||
-        country === "portugal" ||
-        country === "pORTugal"
-      ) {
-        alert("You speak Portuguese!");
-      } else {
-        alert("You probably don't speak Portuguese.");
+      function askForCountry() {
+        let country = prompt("What country are you from?");
+        if (
+          country === "Brazil" ||
+          country === "Portugal" ||
+          country === "brazil" ||
+          country === "BRAZIL" ||
+          country === "PORTUGAL" ||
+          country === "portugal" ||
+          country === "pORTugal"
+        ) {
+          alert("You speak Portuguese!");
+        } else {
+          alert("Go learn Portuguese!");
+        }
       }
+
+      askForCountry();
     </script>
   </body>
 </html>
